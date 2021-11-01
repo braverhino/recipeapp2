@@ -7,17 +7,11 @@ import { BoltLightText } from "../components/CustomText";
 import DiscountList from "../components/Discount/DiscountList";
 import RestaurantList from "../components/Restaurant/RestaurantList";
 import { ScrollView } from "react-native-gesture-handler";
-import Constants from "expo-constants";
 
 
 function HomeScreen({navigation}) {
   return (
-    <ScrollView
-      style={{
-        ...tw`flex pt-2`,
-        marginTop: Constants.statusBarHeight,
-      }}
-    >
+    <ScrollView>
       <StatusBar style="auto" />
       <View style={tw`flex flex-row items-center mx-5`}>
         <IonIcons name="ios-location-outline" size={25} color="black" />
